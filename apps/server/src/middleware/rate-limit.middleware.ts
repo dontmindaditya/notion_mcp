@@ -4,6 +4,7 @@ import { getRedis } from "./session.middleware";
 import { RateLimitError } from "../utils/errors";
 import { logger } from "../utils/logger";
 
+
 /**
  * Per-user (or per-IP for unauthenticated requests) rate limiter.
  *
@@ -67,4 +68,5 @@ async function applyRateLimit(
   }
 
   next();
+
 }

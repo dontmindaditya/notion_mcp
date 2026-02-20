@@ -3,6 +3,7 @@ import { UnauthorizedError } from "../utils/errors";
 import { logger } from "../utils/logger";
 
 /**
+
  * Middleware that requires an authenticated session.
  *
  * Checks req.session.userId — if absent returns 401 using the
@@ -50,4 +51,5 @@ export function getUserId(req: Request): string {
     throw new UnauthorizedError("No authenticated user in request");
   }
   return userId;
+
 }

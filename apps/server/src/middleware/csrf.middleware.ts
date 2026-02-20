@@ -3,6 +3,7 @@ import { getEnv } from "../config/environment";
 import { ForbiddenError } from "../utils/errors";
 import { logger } from "../utils/logger";
 
+
 /**
  * CSRF protection for state-changing HTTP methods (POST, PUT, DELETE, PATCH).
  *
@@ -72,4 +73,5 @@ export function csrfProtection(
 function reject(res: Response): void {
   const err = new ForbiddenError("Invalid request origin");
   res.status(err.statusCode).json(err.toJSON());
+
 }

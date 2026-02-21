@@ -1,5 +1,6 @@
 "use client";
 
+
 import { memo, useCallback, useState } from "react";
 import type { ErrorCode } from "@/types/notion";
 
@@ -67,3 +68,4 @@ function ErrorBannerComponent({
 }
 
 export const ErrorBanner = memo(ErrorBannerComponent);
+

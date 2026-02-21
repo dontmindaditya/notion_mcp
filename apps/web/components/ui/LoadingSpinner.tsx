@@ -1,5 +1,6 @@
 "use client";
 
+
 import { memo } from "react";
 
 interface LoadingSpinnerProps {
@@ -29,3 +30,4 @@ function LoadingSpinnerComponent({ size = "md", label }: LoadingSpinnerProps) {
 }
 
 export const LoadingSpinner = memo(LoadingSpinnerComponent);
+

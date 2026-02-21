@@ -8,6 +8,7 @@ interface SuccessToastProps {
   onClose?: () => void;
 }
 
+
 function SuccessToastComponent({
   message,
   duration = 3000,
@@ -50,3 +51,4 @@ function SuccessToastComponent({
 }
 
 export const SuccessToast = memo(SuccessToastComponent);
+

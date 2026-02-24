@@ -13,6 +13,7 @@ export default function CallbackPage() {
   const [error, setError] = useState<string | null>(null);
   const processed = useRef(false);
 
+  
   useEffect(() => {
     if (processed.current) return;
     processed.current = true;
@@ -86,3 +87,4 @@ export default function CallbackPage() {
     </main>
   );
 }
+

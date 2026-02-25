@@ -3,14 +3,7 @@ import { join } from "node:path";
 import { getPool, closePool } from "../client";
 import { logger } from "../../utils/logger";
 
-/**
- * Seed script for development data.
- * 
- * Usage: npm run seed
- * 
- * Reads and executes SQL seed files from this directory.
- * Only intended for development/testing environments.
- */
+
 async function runSeeds(): Promise<void> {
   const pool = getPool();
   
@@ -35,3 +28,4 @@ async function runSeeds(): Promise<void> {
 
 // Run if called directly
 runSeeds();
+
